@@ -1,26 +1,18 @@
-export const links = [
+export const navLinks = [
   {
-    name: "Home",
-    hash: "#home",
+    title: "About",
+    href: "#about",
   },
   {
-    name: "About",
-    hash: "#about",
+    title: "Projects",
+    href: "#projects",
   },
   {
-    name: "Projects",
-    hash: "#projects",
+    title: "Experience",
+    href: "#experience",
   },
   {
-    name: "Skills",
-    hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
+    title: "Contact",
+    href: "#contact",
   },
 ] as const;

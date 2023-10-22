@@ -1,7 +1,8 @@
 "use client";
 
-import HeroSection from "@/components/HeroSection";
-import Navbar from "@/components/Navbar";
+import About from "@/components/About";
+import HeroSection from "@/components/Hero/HeroSection";
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Navbar />
       <div className="container mt-24 mx-auto py-4 px-12">
         <HeroSection />
+        <About />
       </div>
     </main>
   );
