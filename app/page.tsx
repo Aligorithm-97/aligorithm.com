@@ -1,8 +1,9 @@
 "use client";
 
-import About from "@/components/About";
+import Experience from "@/components/Experience";
 import HeroSection from "@/components/Hero/HeroSection";
 import Navbar from "@/components/Navbar/Navbar";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -10,7 +11,8 @@ export default function Home() {
       <Navbar />
       <div className="container mt-24 mx-auto py-4 px-12">
         <HeroSection />
-        <About />
+        <Projects />
+        <Experience />
       </div>
     </main>
   );

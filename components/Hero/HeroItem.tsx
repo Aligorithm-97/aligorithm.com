@@ -1,10 +1,18 @@
 import { motion } from "framer-motion";
-function HeroItem() {
+import { MutableRefObject } from "react";
+interface proptype {
+  icon: JSX.Element;
+  constraintsRef: MutableRefObject<null>;
+}
+function HeroItem(props: proptype) {
   return (
     <motion.div
-      className="item self-center flex justify-center items-center text-4xl w-12 h-12  rounded-xl bg-white m-2"
+      className="item self-center flex justify-center items-center text-4xl w-12 h-12 rounded-xl bg-white lg:m-2 m-0"
       drag
-    ></motion.div>
+      dragConstraints={props?.constraintsRef}
+    >
+      {props.icon}
+    </motion.div>
   );
 }
 

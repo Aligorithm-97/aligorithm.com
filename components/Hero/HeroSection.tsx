@@ -12,22 +12,52 @@ import {
   SiRedux,
   SiJavascript,
   SiTailwindcss,
+  SiNextdotjs,
+  //SiAngular,
+  SiPostgresql,
+  SiMysql,
+  SiMicrosoftsqlserver,
+  SiMongodb,
+  //SiNginx,
+  SiDocker,
 } from "react-icons/si";
 import { DiJava, DiNodejs } from "react-icons/di";
 import { BsFiletypeScss } from "react-icons/bs";
 import { BiLogoVuejs } from "react-icons/bi";
+import HeroItem from "./HeroItem";
+
+const icons = [
+  <SiJavascript key={1} />,
+  <SiTypescript key={2} />,
+  <SiReact key={3} />,
+  <SiRedux key={4} />,
+  <SiNextdotjs key={5} />,
+  <BiLogoVuejs key={6} />,
+  <DiNodejs key={8} />,
+  <DiJava key={9} />,
+  <SiSpring key={10} />,
+  <AiFillHtml5 key={11} />,
+  <SiCss3 key={12} />,
+  <BsFiletypeScss key={13} />,
+  <SiTailwindcss key={14} />,
+  <SiPostgresql key={15} />,
+  <SiMysql key={16} />,
+  <SiMicrosoftsqlserver key={17} />,
+  <SiMongodb key={18} />,
+  <SiDocker key={19} />,
+];
 function HeroSection() {
   const constraintsRef = useRef(null);
   return (
-    <section className="h-screen">
+    <section className="max-h-screen h-screen">
       <div className="grid grid-cols-1 sm:grid-cols-12 h-1/2">
         <div className="col-span-7 place-self-center text-center">
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
+          <h1 className="text-white mb-4 text-2xl  lg:text-6xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-600">
               ALİ TEMURTAŞ
             </span>
           </h1>
-          <h2 className="text-white text-4xl w-auto italic mt-10">
+          <h2 className="text-white lg:text-4xl text-xl w-auto italic mt-10 ">
             <TypeAnimation
               sequence={[
                 "Information Systems Engineer",
@@ -46,6 +76,7 @@ function HeroSection() {
         <div className="col-span-5 place-self-center mt-20 lg:mt-15">
           <div className="rounded-full bg-[181818] w-[250px] h-[250px] lg-w-[400px] lg-h-[400px] relative">
             <Image
+              priority
               className="absolute transform rounded-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               src="/images/aligorithm.jpg"
               alt="image"
@@ -56,99 +87,24 @@ function HeroSection() {
         </div>
       </div>
       <div className="flex justify-center">
-        <button className="px-6 py-3 rounded-full mr-4 bg-transparent hover:bg-slate-800 border border-white text-white mt-10">
+        <a
+          className="px-6 py-3 rounded-full mr-4 bg-transparent hover:bg-white hover:text-black border border-white text-white mt-16 lg:mt-0"
+          href="/newcvmust.txt"
+          download
+        >
           Download CV
-        </button>
+        </a>
       </div>
-      <div className="mt-16 flex justify-center align-middle">
+      <div className="mt-10 grid">
         <motion.div
-          className="container w-1/2 lg:w-screen min-w-fit h-52 bg-[#121212] overflow-hidden rounded-lg flex align-middle justify-center"
+          className="container w-full lg:w-screen min-w-fit h-52 bg-[#121212] overflow-hidden rounded-lg grid lg:grid-cols-9 grid-cols-6"
           ref={constraintsRef}
         >
-          <motion.div
-            className="item self-center flex justify-center items-center text-4xl w-12 h-12  rounded-xl bg-orange-500 m-2"
-            drag
-            dragConstraints={constraintsRef}
-          >
-            <AiFillHtml5 />
-          </motion.div>
-          <motion.div
-            className="item self-center flex justify-center items-center text-4xl w-12 h-12  rounded-xl bg-white m-2"
-            drag
-            dragConstraints={constraintsRef}
-          >
-            <SiTypescript />
-          </motion.div>
-          <motion.div
-            className="item self-center flex justify-center items-center text-4xl w-12 h-12  rounded-xl bg-blue-500 m-2"
-            drag
-            dragConstraints={constraintsRef}
-          >
-            <SiReact />
-          </motion.div>
-          <motion.div
-            className="item self-center flex justify-center items-center text-4xl w-12 h-12  rounded-xl bg-white m-2"
-            drag
-            dragConstraints={constraintsRef}
-          >
-            <DiJava />
-          </motion.div>
-          <motion.div
-            className="item self-center flex justify-center items-center text-4xl w-12 h-12  rounded-xl bg-green-500 m-2"
-            drag
-            dragConstraints={constraintsRef}
-          >
-            <SiSpring />
-          </motion.div>
-          <motion.div
-            className="item self-center flex justify-center items-center text-4xl w-12 h-12  rounded-xl bg-white m-2"
-            drag
-            dragConstraints={constraintsRef}
-          >
-            <SiCss3 />
-          </motion.div>
-          <motion.div
-            className="item self-center flex justify-center items-center text-4xl w-12 h-12  rounded-xl bg-white m-2"
-            drag
-            dragConstraints={constraintsRef}
-          >
-            <BsFiletypeScss />
-          </motion.div>
-          <motion.div
-            className="item self-center flex justify-center items-center text-4xl w-12 h-12  rounded-xl bg-white m-2"
-            drag
-            dragConstraints={constraintsRef}
-          >
-            <DiNodejs />
-          </motion.div>
-          <motion.div
-            className="item self-center flex justify-center items-center text-4xl w-12 h-12  rounded-xl bg-white m-2"
-            drag
-            dragConstraints={constraintsRef}
-          >
-            <SiRedux />
-          </motion.div>
-          <motion.div
-            className="item self-center flex justify-center items-center text-4xl w-12 h-12  rounded-xl bg-white m-2"
-            drag
-            dragConstraints={constraintsRef}
-          >
-            <BiLogoVuejs />
-          </motion.div>
-          <motion.div
-            className="item self-center flex justify-center items-center text-4xl w-12 h-12  rounded-xl bg-white m-2"
-            drag
-            dragConstraints={constraintsRef}
-          >
-            <SiJavascript />
-          </motion.div>
-          <motion.div
-            className="item self-center flex justify-center items-center text-4xl w-12 h-12  rounded-xl bg-white m-2"
-            drag
-            dragConstraints={constraintsRef}
-          >
-            <SiTailwindcss />
-          </motion.div>
+          {icons.map((e, i) => {
+            return (
+              <HeroItem key={i} icon={e} constraintsRef={constraintsRef} />
+            );
+          })}
         </motion.div>
       </div>
     </section>
