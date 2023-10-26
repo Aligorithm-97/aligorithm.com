@@ -41,23 +41,24 @@ export default function Experience() {
       className="scroll-mt-28 mb-28 sm:mb-40 text-white h-screen md:mt-0 mt-16"
     >
       <Title>Experience</Title>
-      <VerticalTimeline lineColor="">
+      <VerticalTimeline lineColor="" animate>
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
               visible
               className="vertical-timeline-element--work"
-              contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              contentStyle={{ background: "#202020", color: "#fff" }}
               contentArrowStyle={{
-                borderRight: "7px solid  rgb(33, 150, 243)",
+                borderRight: "7px solid white",
               }}
               date={item.date}
-              iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+              iconStyle={{ background: "#121212", color: "#fff" }}
               icon={item.icon}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <hr />
+              <p className="!mt-1 !font-normal text-white">
                 {item.description}
               </p>
             </VerticalTimelineElement>
