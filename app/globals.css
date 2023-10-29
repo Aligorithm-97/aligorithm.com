@@ -8,4 +8,13 @@ html {
 
 ::-webkit-scrollbar {
     display: none;
-  }
+}
+
+.container {
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+section{
+    scroll-snap-align: center;
+}
