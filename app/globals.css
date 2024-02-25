@@ -5,16 +5,29 @@
 html {
     --line-color: #ffff;
 }
-
+body{
+    font-style: italic;
+}
 ::-webkit-scrollbar {
     display: none;
 }
 
 .container {
     overflow: scroll;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
+    /* scroll-behavior: smooth; */
 }
 
 section{
     scroll-snap-align: center;
+    scroll-behavior: smooth;
 }
+a:link { 
+    text-decoration: none; 
+  } 
+a:visited {     
+    text-decoration: none; 
+  } 
+a:active { 
+    text-decoration: none; 
+  }

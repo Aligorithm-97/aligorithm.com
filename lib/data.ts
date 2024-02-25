@@ -4,11 +4,7 @@ export const navLinks = [
     href: "#projects",
   },
   {
-    title: "Experience",
+    title: "Experience & Education",
     href: "#experience",
-  },
-  {
-    title: "Contact",
-    href: "#contact",
   },
 ] as const;

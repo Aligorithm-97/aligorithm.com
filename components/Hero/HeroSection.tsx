@@ -49,11 +49,11 @@ const icons = [
 function HeroSection() {
   const constraintsRef = useRef(null);
   return (
-    <section className="max-h-screen h-screen">
-      <div className="grid grid-cols-1 sm:grid-cols-12 h-1/2">
+    <section id="landing" className="max-h-screen h-screen">
+      <div className="grid grid-cols-1 sm:grid-cols-12 h-1/2 pt-14">
         <div className="col-span-7 place-self-center text-center">
           <h1 className="text-white mb-4 text-2xl  lg:text-6xl font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-green-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-500">
               ALİ TEMURTAŞ
             </span>
           </h1>
@@ -89,7 +89,7 @@ function HeroSection() {
       <div className="flex justify-center">
         <a
           className="px-6 py-3 rounded-full mr-4 bg-transparent hover:bg-white hover:text-black border border-white text-white mt-16 lg:mt-0"
-          href="/newcvmust.txt"
+          href="/cvtrialAli.pdf"
           download
         >
           Download CV
@@ -97,7 +97,7 @@ function HeroSection() {
       </div>
       <div className="mt-10 grid">
         <motion.div
-          className="container w-full lg:w-screen min-w-fit h-52 bg-[#121212] overflow-hidden rounded-lg grid lg:grid-cols-9 grid-cols-6"
+          className="container w-full lg:w-full min-w-fit h-52 bg-[#121212] overflow-hidden rounded-lg grid lg:grid-cols-9 grid-cols-6"
           ref={constraintsRef}
         >
           {icons.map((e, i) => {
