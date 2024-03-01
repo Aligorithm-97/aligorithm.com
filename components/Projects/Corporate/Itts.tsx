@@ -7,8 +7,8 @@ function Itts() {
       <h2 className="text-4xl">ITTS</h2>
       <a href="https://www.itoolsinnova.com/" target="_blank" rel="noreferrer">
         <Image
-          className="flex align-middle justify-center mt-10 mb-10 rounded-lg"
-          src="/images/itools.png"
+          className="flex align-middle justify-center mt-10 mb-10 rounded-lg lg:w-full"
+          src="/images/itts.png"
           alt="image"
           width={500}
           height={250}
